@@ -12,11 +12,11 @@ API
 .. toctree::
    :maxdepth: 1
 
-   Common <s3/commons>
+   通用 <s3/commons>
    认证 <s3/authentication>
-   Service Ops <s3/serviceops>
-   Bucket Ops <s3/bucketops>
-   Object Ops <s3/objectops>
+   服务操作 <s3/serviceops>
+   Bucket 操作 <s3/bucketops>
+   对象操作 <s3/objectops>
    C++ <s3/cpp>
    C# <s3/csharp>
    Java <s3/java>
@@ -38,15 +38,15 @@ API
 +---------------------------------+-----------------+----------------------------------------+
 | **Delete Bucket**               | Supported       |                                        |
 +---------------------------------+-----------------+----------------------------------------+
-| **Create Bucket**               | Supported       | Different set of canned ACLs           |
+| **Create Bucket**               | Supported       | 不同的预置ACL集                          |
 +---------------------------------+-----------------+----------------------------------------+
 | **Bucket Lifecycle**            | Not Supported   |                                        |
 +---------------------------------+-----------------+----------------------------------------+
-| **Policy (Buckets, Objects)**   | Not Supported   | ACLs are supported                     |
+| **Policy (Buckets, Objects)**   | Not Supported   | 支持ACLs                                |
 +---------------------------------+-----------------+----------------------------------------+
 | **Bucket Website**              | Not Supported   |                                        |
 +---------------------------------+-----------------+----------------------------------------+
-| **Bucket ACLs (Get, Put)**      | Supported       | Different set of canned ACLs           |
+| **Bucket ACLs (Get, Put)**      | Supported       | 不同的预置ACL集                          |
 +---------------------------------+-----------------+----------------------------------------+
 | **Bucket Location**             | Supported       |                                        |
 +---------------------------------+-----------------+----------------------------------------+
@@ -72,7 +72,7 @@ API
 +---------------------------------+-----------------+----------------------------------------+
 | **Copy Object**                 | Supported       |                                        |
 +---------------------------------+-----------------+----------------------------------------+
-| **Multipart Uploads**           | Supported       | (missing Copy Part)                    |
+| **Multipart Uploads**           | Supported       | (不具备 Copy 部分)                       |
 +---------------------------------+-----------------+----------------------------------------+
 
 
