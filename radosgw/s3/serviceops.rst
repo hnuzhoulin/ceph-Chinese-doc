@@ -1,12 +1,12 @@
-Service Operations
+服务操作
 ==================
 
-List Buckets
+列出 bucket
 ------------
-``GET /`` returns a list of buckets created by the user making the request. ``GET /`` only
-returns buckets created by an authenticated user. You cannot make an anonymous request.
+``GET /`` 会返回执行该操作的用户的 bucket 列表。``GET /`` 只返回由经过认证的用户\
+新建的 buckets。你不同提交一个匿名请求。
 
-Syntax
+语法
 ~~~~~~
 ::
 
@@ -15,25 +15,25 @@ Syntax
 
 	Authorization: AWS {access-key}:{hash-of-header-and-secret}
 
-Response Entities
+请求返回值
 ~~~~~~~~~~~~~~~~~
 
 +----------------------------+-------------+-----------------------------------------------------------------+
-| Name                       | Type        | Description                                                     |
+| 名称                        | 类型        | 描述                                                             |
 +============================+=============+=================================================================+
-| ``Buckets``                | Container   | Container for list of buckets.                                  |
+| ``Buckets``                | Container   | 包含 buckets 列表的容器                                           |
 +----------------------------+-------------+-----------------------------------------------------------------+
-| ``Bucket``                 | Container   | Container for bucket information.                               |
+| ``Bucket``                 | Container   | 包含 bucket 信息的容器                                            |
 +----------------------------+-------------+-----------------------------------------------------------------+
-| ``Name``                   | String      | Bucket name.                                                    |
+| ``Name``                   | String      | Bucket 名称                                                      |
 +----------------------------+-------------+-----------------------------------------------------------------+
-| ``CreationDate``           | Date        | UTC time when the bucket was created.                           |
+| ``CreationDate``           | Date        | bucket 创建的 UTC 时间                                           |
 +----------------------------+-------------+-----------------------------------------------------------------+
-| ``ListAllMyBucketsResult`` | Container   | A container for the result.                                     |
+| ``ListAllMyBucketsResult`` | Container   | 包含所有 bucket 信息 的容器                                       |
 +----------------------------+-------------+-----------------------------------------------------------------+
-| ``Owner``                  | Container   | A container for the bucket owner's ``ID`` and ``DisplayName``.  |
+| ``Owner``                  | Container   | 包含 bucket 所有者的 ``ID`` 和 ``显示名称``  的容器                 |
 +----------------------------+-------------+-----------------------------------------------------------------+
-| ``ID``                     | String      | The bucket owner's ID.                                          |
+| ``ID``                     | String      | bucket 所有者的 ID                                               |
 +----------------------------+-------------+-----------------------------------------------------------------+
-| ``DisplayName``            | String      | The bucket owner's display name.                                |
+| ``DisplayName``            | String      | bucket 所有者的显示名称                                           |
 +----------------------------+-------------+-----------------------------------------------------------------+

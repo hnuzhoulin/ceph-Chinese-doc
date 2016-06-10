@@ -1,45 +1,45 @@
 =================
- Common Entities
+ 通用实例
 =================
 
 .. toctree::
    :maxdepth: -1
 
-Bucket and Host Name
+Bucket 和 主机名
 --------------------
-There are two different modes of accessing the buckets. The first (preferred) method
-identifies the bucket as the top-level directory in the URI. ::
+有两种不同的方式访问 bucket。第一个(首选)方法通过URI中的顶级目录 \
+来确认 bucket 。
 
 	GET /mybucket HTTP/1.1
 	Host: cname.domain.com
 
-The second method identifies the bucket via a virtual bucket host name. For example::
+第二种方法是通过虚拟的bucket 主机名来确认 bucket。举例如下：
 
 	GET / HTTP/1.1
 	Host: mybucket.cname.domain.com
 
-.. tip:: We prefer the first method, because the second method requires expensive domain certification and DNS wild cards.
+.. tip:: 我们更倾向于第一种方法，因为第二种方法需要昂贵的域认证和 DNS 泛域名解析。
 
-Common Request Headers
+通用的 Request 请求头
 ----------------------
 
 +--------------------+------------------------------------------+
-| Request Header     | Description                              |
+| Request 头         | 描述                                      |
 +====================+==========================================+
-| ``CONTENT_LENGTH`` | Length of the request body.              |
+| ``CONTENT_LENGTH`` | request 主体的长度.                       |
 +--------------------+------------------------------------------+
-| ``DATE``           | Request time and date (in UTC).          |
+| ``DATE``           | Request 时间和日期 (in UTC).              |
 +--------------------+------------------------------------------+
-| ``HOST``           | The name of the host server.             |
+| ``HOST``           | 服务器的主机名                             |
 +--------------------+------------------------------------------+
-| ``AUTHORIZATION``  | Authorization token.                     |
+| ``AUTHORIZATION``  | 认证 token.                     |
 +--------------------+------------------------------------------+
 
-Common Response Status
+通用 Response 状态
 ----------------------
 
 +---------------+-----------------------------------+
-| HTTP Status   | Response Code                     |
+| HTTP 状态      | Response 代码                     |
 +===============+===================================+
 | ``100``       | Continue                          |
 +---------------+-----------------------------------+
