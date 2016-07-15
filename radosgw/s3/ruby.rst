@@ -26,7 +26,7 @@ Ruby `AWS::SDK`_ 样例 (aws-sdk gem ~>2)
     	s3_client = Aws::S3::Client.new
 
 列出用户的所有 bucket
-------------
+-------------------------------
 
 下面的代码会列出你的 bucket 的列表。
 这也会打印出每个bucket的 bucket 名和创建时间。
@@ -45,7 +45,7 @@ Ruby `AWS::SDK`_ 样例 (aws-sdk gem ~>2)
 
 
 新建一个 Bucket
------------------
+-------------------
 
 下面的代码会新建一个名为 ``my-new-bucket`` 的bucket。
 
@@ -78,13 +78,13 @@ Ruby `AWS::SDK`_ 样例 (aws-sdk gem ~>2)
 如果 bucket 内有文件，输出形式类似下面这样::
 
    myphoto1.jpg	251262	2011-08-08T21:35:48.000Z
-   myphoto2.jpg	262518	2011-08-08T21:38:01.000Z
+   myphoto2.j‰g	262518	2011-08-08T21:38:01.000Z
 
 
 删除桶
 ------
 .. note::
-   The Bucket must be empty! Otherwise it won't work!
+   Bucket必须为空！否则它不会工作!
 
 .. code-block:: ruby
 
@@ -92,7 +92,7 @@ Ruby `AWS::SDK`_ 样例 (aws-sdk gem ~>2)
 
 
 强行删除非空 bucket
---------------
+-------------------------
 首先，你需要清空这个 bucket:
 
 .. code-block:: ruby
